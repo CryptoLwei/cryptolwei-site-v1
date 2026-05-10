@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Smart Contracts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Team</a>
+            <a href="index.html#contact"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-blue-400">Smart Contracts</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                Smart contracts are one of the most significant innovations enabled by blockchain technology,
+                particularly popularized by the Ethereum platform. Simply put, a smart contract is a self-executing
+                agreement with the terms of the agreement directly written into lines of code. These contracts are
+                stored and run on a blockchain, making them immutable and transparent.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How Smart Contracts Work: The "If/Then" Logic</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                The core concept of a smart contract is similar to a traditional contract, but it's automated. Imagine a
+                vending machine: if you put in the correct amount of money and select an item, the machine automatically
+                dispenses the item. There's no need for a cashier. Smart contracts work similarly, using "if/then"
+                statements coded into the blockchain.
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Code as Agreement:** The terms and conditions of the agreement are directly embedded in the
+                    contract's code.</li>
+                <li>**Automatic Execution:** When predefined conditions are met (e.g., a certain date is reached, a
+                    payment is received, or a specific event occurs), the smart contract automatically executes the
+                    agreed-upon actions.</li>
+                <li>**Decentralized & Immutable:** Once deployed on the blockchain, a smart contract's code cannot be
+                    changed. Its execution is verified and recorded by all nodes on the network, ensuring trust and
+                    preventing tampering without the need for intermediaries.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Key Benefits of Smart Contracts</h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Automation & Efficiency</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Smart contracts automate multi-step processes, reducing manual effort, paperwork, and the time typically
+                associated with traditional contracts. This leads to faster transactions and more efficient workflows.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Trust & Transparency</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Because the code is transparent and the execution is automatic and verifiable on the blockchain, there's
+                no need to trust a third party to ensure the agreement is honored. All participants can verify the terms
+                and execution.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">3. Security & Accuracy</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                The cryptographic security of the blockchain makes smart contracts highly secure and resistant to fraud
+                or manipulation. Since they are code-driven, they eliminate human error in the execution process.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">4. Cost Savings</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                By removing the need for intermediaries (like lawyers, banks, or notaries), smart contracts can
+                significantly reduce the costs associated with traditional contractual agreements.
+            </p>
+            <p class="text-lg text-gray-300 mb-4">
+                Smart contracts are foundational to many advanced blockchain applications, including decentralized
+                finance (DeFi), NFTs, and various supply chain solutions, transforming how agreements are made and
+                executed in the digital age.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+        <button id="scrollToTopBtn"
+            class="fixed bottom-8 right-8 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300 focus:outline-none hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </button>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top Button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.remove("hidden");
+            } else {
+                scrollToTopBtn.classList.add("hidden");
+            }
+        };
+
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>

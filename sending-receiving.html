@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Sending & Receiving Transactions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-purple-400">Sending & Receiving
+            Cryptocurrency</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                The core utility of cryptocurrency is the ability to send and receive value directly, peer-to-peer,
+                without intermediaries. While it might seem complex at first, the process is quite straightforward once
+                you understand a few key concepts.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How to Receive Cryptocurrency</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Receiving cryptocurrency is usually the simpler part of the equation. You'll need to provide your unique
+                **public address** (also known as your wallet address) to the sender.
+            </p>
+            <ol class="list-decimal list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Open Your Wallet:** Access the wallet where you wish to receive funds (e.g., your software wallet
+                    app, or connect your hardware wallet).</li>
+                <li>**Find the "Receive" or "Deposit" Option:** Look for a button or tab typically labeled "Receive,"
+                    "Deposit," or an arrow pointing inwards.</li>
+                <li>**Locate Your Public Address:** Your wallet will display your public address. This is a long string
+                    of alphanumeric characters (e.g., `1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa` for Bitcoin, or `0xAbc...xyz`
+                    for Ethereum). Many wallets also offer a QR code for easy scanning.</li>
+                <li>**Share Your Address:** Carefully share this address with the person or entity sending you crypto.
+                    <ul class="list-circle list-inside ml-4 mt-1 text-gray-400">
+                        <li>**Copy and Paste:** Always copy the address directly from your wallet to avoid typos.</li>
+                        <li>**QR Code:** If the sender supports it, using a QR code is often the safest and easiest
+                            method.</li>
+                    </ul>
+                </li>
+                <li>**Wait for Confirmation:** Once the sender broadcasts the transaction, it will appear as "pending"
+                    or "unconfirmed" in your wallet. After a few network confirmations (which can take minutes to an
+                    hour or more depending on the crypto and network congestion), the funds will be fully available.
+                </li>
+            </ol>
+            <p class="text-lg text-gray-300 mb-4 font-bold text-red-400">
+                **Important:** Always ensure the address you provide is for the *correct cryptocurrency and network*.
+                Sending Bitcoin to an Ethereum address, for example, will result in permanent loss of funds!
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How to Send Cryptocurrency</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Sending cryptocurrency involves a few more steps, as you're initiating the movement of funds on the
+                blockchain.
+            </p>
+            <ol class="list-decimal list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Open Your Wallet:** Access the wallet from which you want to send funds.</li>
+                <li>**Find the "Send" or "Withdraw" Option:** Look for a button or tab typically labeled "Send,"
+                    "Withdraw," or an arrow pointing outwards.</li>
+                <li>**Enter Recipient's Address:** This is the most critical step. Get the recipient's public address
+                    directly from them.
+                    <ul class="list-circle list-inside ml-4 mt-1 text-gray-400">
+                        <li>**Copy and Paste:** Always copy and paste the address. Never type it manually if possible.
+                        </li>
+                        <li>**QR Code Scan:** Use your wallet's scanner to scan the recipient's QR code for maximum
+                            accuracy.</li>
+                        <li>**Double-Check:** After pasting, **always verify the first few and last few characters** of
+                            the address against the one provided by the recipient. Malicious software can sometimes swap
+                            addresses in your clipboard.</li>
+                    </ul>
+                </li>
+                <li>**Enter Amount:** Specify the amount of cryptocurrency you wish to send.</li>
+                <li>**Set Transaction Fee:** Your wallet will usually suggest a fee (often called "network fee" or "gas
+                    fee"). A higher fee generally means your transaction will be processed faster by the network. (More
+                    on this in "Transaction Fees").</li>
+                <li>**Review and Confirm:** Your wallet will show you a summary of the transaction: amount, recipient
+                    address, and fee. **Review everything carefully** before proceeding.</li>
+                <li>**Authorize Transaction:** Depending on your wallet, you'll need to enter your password, PIN, or
+                    physically confirm on a hardware wallet. This uses your private key to cryptographically sign the
+                    transaction.</li>
+                <li>**Transaction Broadcast:** Once signed, your wallet broadcasts the transaction to the cryptocurrency
+                    network. It will then wait for miners/validators to include it in a block.</li>
+            </ol>
+            <p class="text-lg text-gray-300 mb-4 font-bold text-red-400">
+                **Remember:** Cryptocurrency transactions are irreversible. Once confirmed on the blockchain, you cannot
+                cancel or reverse them. Exercise extreme caution.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-purple-700 hover:bg-purple-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

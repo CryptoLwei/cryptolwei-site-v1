@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Backing Up Your Wallet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-green-400">Backing Up Your Crypto Wallet:
+            Your Safety Net</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                You've set up your non-custodial wallet and understand that you control your keys. But what if your
+                phone is lost, your computer crashes, or your hardware wallet is damaged? This is where wallet backups
+                come in. Backing up your wallet is the single most important step to ensure you never lose access to
+                your cryptocurrency.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">The Master Key: Your Seed Phrase (Mnemonic Phrase)</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                For almost all modern non-custodial wallets, your backup is a "seed phrase" (also known as a recovery
+                phrase or mnemonic phrase). This is typically a sequence of 12 or 24 common words presented in a
+                specific order. This phrase is a human-readable representation of your private keys and can regenerate
+                your entire wallet, including all associated addresses and funds, on any compatible wallet software or
+                hardware.
+            </p>
+            <p class="text-lg text-gray-300 mb-4 font-bold text-red-400">
+                **Critical Warning:** Anyone who has your seed phrase has full access to your funds. Treat it with the
+                utmost secrecy and care.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Best Practices for Backing Up Your Seed Phrase</h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Write It Down Physically</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Pen and Paper:** The most common and recommended method. Write down each word clearly and
+                    accurately. Double-check for misspellings.</li>
+                <li>**Multiple Copies:** Create at least two or three copies.</li>
+                <li>**No Digital Copies:** Never type your seed phrase into any digital device connected to the internet
+                    (computer, phone, cloud storage, email, messaging apps). This exposes it to online threats.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Store Securely and Offline</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Physical Security:** Store your written copies in different, highly secure physical locations.
+                    Think fireproof safes, bank safety deposit boxes, or other hidden spots.</li>
+                <li>**Durability:** Consider using materials more robust than paper, such as engraved metal plates
+                    (e.g., Cryptosteel, Billfodl), which are resistant to fire, water, and corrosion.</li>
+                <li>**Discreet Storage:** Don't label it "Crypto Wallet Seed Phrase." You might use a code or store it
+                    amongst other important documents.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">3. Test Your Backup (Optional but Recommended)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                If you have a very small amount of crypto, you could try restoring your wallet on a *separate, clean
+                device* using your seed phrase to ensure it works. This builds confidence but should be done with
+                extreme caution and on a device you are sure is secure.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">What Not to Do</h2>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Do NOT store on cloud services (Google Drive, iCloud, Dropbox):** They are vulnerable to hacks.
+                </li>
+                <li>**Do NOT save as a screenshot or photo:** Easily accessible if your device is compromised.</li>
+                <li>**Do NOT email or message it to yourself:** These platforms are not secure for private keys.</li>
+                <li>**Do NOT store on a computer or USB drive:** If these are compromised, your seed phrase is too.</li>
+                <li>**Do NOT tell anyone your seed phrase:** Even trusted friends or family could accidentally expose
+                    it.</li>
+            </ul>
+
+            <p class="text-lg text-gray-300 mb-4">
+                Your seed phrase is the key to your digital fortune. Treat it as if it were the most valuable possession
+                you own, because in the decentralized world of crypto, it truly is. A well-executed backup strategy is
+                your best defense against loss.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

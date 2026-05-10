@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Importing Wallets</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-green-400">Importing Wallets: Regaining
+            Access to Your Crypto</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                "Importing a wallet" is the process of regaining access to your existing cryptocurrency funds on a new
+                wallet application or device. This is typically done when you get a new phone, your old device is lost
+                or broken, or you simply want to use a different wallet interface while keeping the same crypto
+                addresses. It's a testament to the power of non-custodial ownership where your funds aren't tied to a
+                specific app or device, but rather to your private keys.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">The Power of Your Seed Phrase</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                The primary method for importing a wallet is by using your **seed phrase** (also known as a recovery
+                phrase or mnemonic phrase). This 12 or 24-word sequence is the cryptographic key to your entire wallet.
+                By entering this phrase into a new compatible wallet, you essentially "re-derive" your private keys and
+                all associated cryptocurrency addresses, thus regaining full control of your funds.
+            </p>
+            <p class="text-lg text-gray-300 mb-4 font-bold text-red-400">
+                **Crucial Reminder:** Only ever enter your seed phrase into official, trusted wallet applications or
+                hardware devices. Phishing scams often try to trick you into entering it on fake websites.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How to Import a Wallet Using a Seed Phrase (General Steps)
+            </h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">Step 1: Get Your New Wallet Ready</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>Download the official app or set up your new hardware wallet.</li>
+                <li>When prompted, choose the "Import Wallet," "Restore Wallet," or "I already have a wallet" option,
+                    rather than "Create New Wallet."</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">Step 2: Enter Your Seed Phrase</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>The wallet will present you with fields to enter your 12 or 24 words.</li>
+                <li>Carefully type in each word of your seed phrase in the exact order it was given to you. Pay close
+                    attention to spelling and the correct order.</li>
+                <li>For hardware wallets, you might enter the words directly on the device's screen or confirm them as
+                    prompted by the companion software.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">Step 3: Set a New Password/PIN (Optional)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Even though you're importing, you might be asked to create a new local password or PIN for the new
+                wallet instance. This protects access to your wallet on that specific device but is separate from your
+                seed phrase.
+            </p>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">Step 4: Access Your Funds</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Once the seed phrase is successfully entered and processed, your wallet will synchronize with the
+                blockchain, and your full cryptocurrency balance associated with that seed phrase should appear.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Other Import Methods (Less Common/More Advanced)</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                While the seed phrase is the standard, some wallets might offer other import options:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Individual Private Key:** You can sometimes import a single private key to control a specific
+                    cryptocurrency address. This is usually not recommended for wallets holding multiple assets
+                    generated from a seed phrase, as you'd only gain access to that one address.</li>
+                <li>**Keystore File (JSON):** For Ethereum-based wallets, you might encounter a JSON keystore file,
+                    which is an encrypted private key. You'll need the password that was set when the file was created.
+                </li>
+            </ul>
+            <p class="text-lg text-gray-300 mb-4">
+                Always prioritize using your seed phrase for importing, as it's the most comprehensive and secure
+                method.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Key Takeaways for Importing</h2>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Your seed phrase is paramount.** Keep it secret and secure.</li>
+                <li>**Only use trusted sources** for wallet software/hardware.</li>
+                <li>**Double-check everything** during the import process to avoid errors.</li>
+                <li>**Your crypto isn't "moved"**: Importing simply gives a new wallet software/hardware the ability to
+                    access and manage funds already on the blockchain.</li>
+            </ul>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

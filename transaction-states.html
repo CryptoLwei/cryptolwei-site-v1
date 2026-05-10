@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Transaction States</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-purple-400">Understanding Cryptocurrency
+            Transaction States</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                When you send cryptocurrency, it doesn't instantly appear in the recipient's wallet. Instead, it goes
+                through several "states" or stages on the blockchain before it's considered final and secure.
+                Understanding these states helps you track your transactions and know what to expect.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">The Journey of a Transaction</h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Unconfirmed / Pending (In the Mempool)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                After you broadcast a transaction from your wallet, it first enters the **mempool** (memory pool) of the
+                network. The mempool is like a waiting area or a lobby for all unconfirmed transactions. At this stage:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>Your wallet will typically show the transaction as "pending" or "unconfirmed."</li>
+                <li>It's waiting to be picked up by a miner (Proof-of-Work) or validator (Proof-of-Stake) and included
+                    in a new block.</li>
+                <li>Transactions in the mempool are public, and you can usually see them on a blockchain explorer (e.g.,
+                    Blockchair for Bitcoin, Etherscan for Ethereum).</li>
+                <li>**Important:** An unconfirmed transaction is not final. It can potentially be replaced, dropped, or
+                    even double-spent (though the network generally prevents the latter for legitimate transactions).
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Confirmed (Included in a Block)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                A transaction becomes "confirmed" when a miner or validator successfully includes it in a block, and
+                that block is added to the blockchain.
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>Your transaction is now part of the permanent, immutable record of the blockchain.</li>
+                <li>The number of confirmations refers to how many blocks have been added *on top* of the block
+                    containing your transaction. Each new block adds to the security.</li>
+                <li>For most transactions, one confirmation is enough for the recipient's wallet to show the balance,
+                    but many services (exchanges, vendors) require multiple confirmations (e.g., 3, 6, 12, or even 30+)
+                    before considering the funds truly secure and available for withdrawal or use. This reduces the risk
+                    of a "reorg" (a chain split where your transaction might be reversed).</li>
+                <li>The time it takes to get confirmations varies widely depending on the cryptocurrency's block time
+                    (e.g., Bitcoin: ~10 minutes per block; Ethereum: ~12-15 seconds per block) and network congestion.
+                </li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">3. Failed / Dropped (Less Common, but Possible)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                In some cases, a transaction might fail or be dropped from the mempool.
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Low Fees:** If you offered too low a transaction fee during a period of high network congestion,
+                    miners/validators might prioritize transactions with higher fees, causing yours to be ignored and
+                    eventually dropped from the mempool.</li>
+                <li>**Network Overload:** In rare instances, extreme network overload or errors can cause transactions
+                    to fail.</li>
+                <li>**No Funds Deducted:** If a transaction fails or is dropped, the funds are generally not lost. They
+                    remain in your wallet, as they were never actually processed and confirmed on the blockchain. You
+                    can typically try sending it again with a higher fee or when network conditions are better.</li>
+                <li>**Double Spend Attempt (Malicious):** A double-spend occurs when someone tries to send the same
+                    funds twice. Networks are designed to prevent this by only confirming the first valid transaction
+                    received.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Using a Blockchain Explorer</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                To track the exact state of your transaction, you'll need its **transaction ID** (TxID or transaction
+                hash). This unique identifier is generated when you send the transaction and can be found in your
+                wallet's transaction history. Paste the TxID into a blockchain explorer for the relevant cryptocurrency
+                (e.g., <a href="https://www.blockchain.com/explorer"
+                    class="text-blue-300 hover:text-blue-500 font-medium" target="_blank">Blockchain.com/explorer</a>
+                for Bitcoin, <a href="https://etherscan.io/" class="text-blue-300 hover:text-blue-500 font-medium"
+                    target="_blank">Etherscan.io</a> for Ethereum) to see its live status, number of confirmations, and
+                other details.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-purple-700 hover:bg-purple-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Wallets Explained</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Team</a>
+            <a href="index.html#contact"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-green-400">Wallets Explained</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                When you first encounter cryptocurrency, one of the most common questions is, "Where do I store it?" The
+                answer lies in cryptocurrency wallets. However, unlike traditional wallets that hold physical cash,
+                crypto wallets don't actually "store" your digital coins. Instead, they store the critical
+                information—your public and private keys—that allows you to access and manage your cryptocurrency on the
+                blockchain.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How Wallets Connect You to the Blockchain</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Imagine the blockchain as a giant, public ledger where all cryptocurrency transactions are recorded.
+                Your "wallet" is essentially a tool that provides you with an interface to interact with this ledger. It
+                holds the cryptographic keys (your public and private keys) that prove your ownership of certain
+                cryptocurrency amounts recorded on the blockchain. When you want to send or receive crypto, your wallet
+                uses these keys to sign and broadcast the transaction to the network.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Understanding Hot Wallets vs. Cold Wallets</h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Hot Wallets</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                "Hot wallets" are cryptocurrency wallets that are connected to the internet. They offer convenience for
+                frequent transactions because your keys are readily accessible online.
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Examples:** Mobile wallets (apps on your smartphone), desktop wallets (software on your computer),
+                    and web wallets (accessed through a browser, often provided by exchanges).</li>
+                <li>**Pros:** Easy to use, convenient for quick transactions, generally free.</li>
+                <li>**Cons:** More susceptible to hacking and online threats due to their internet connectivity. Best
+                    for holding smaller amounts of crypto for active use.</li>
+            </ul>
+
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Cold Wallets</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                "Cold wallets" are cryptocurrency wallets that store your private keys offline, completely disconnected
+                from the internet. This makes them significantly more secure against online attacks.
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Examples:** Hardware wallets (physical devices like USB drives) and paper wallets (private keys
+                    printed on paper).</li>
+                <li>**Pros:** Highest level of security, ideal for long-term storage of significant amounts of
+                    cryptocurrency.</li>
+                <li>**Cons:** Less convenient for frequent transactions, can be lost or physically damaged (though funds
+                    are recoverable with a seed phrase). Hardware wallets usually come with a cost.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">The Importance of Your Seed Phrase (Recovery Phrase)</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                When you set up most non-custodial wallets (which you control), you'll be given a "seed phrase" (also
+                known as a recovery phrase or mnemonic phrase), typically a sequence of 12 or 24 words. This seed phrase
+                is incredibly important: it's your master key. If you lose your wallet device, your computer crashes, or
+                your phone is stolen, you can use this seed phrase to recover access to your cryptocurrency on a new
+                device.
+            </p>
+            <p class="text-lg text-gray-300 mb-4">
+                **Never share your seed phrase with anyone and store it in a secure, offline location.** Anyone with
+                your seed phrase can access and steal your funds.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+        <button id="scrollToTopBtn"
+            class="fixed bottom-8 right-8 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300 focus:outline-none hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+        </button>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll to Top Button functionality
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.classList.remove("hidden");
+            } else {
+                scrollToTopBtn.classList.add("hidden");
+            }
+        };
+
+        scrollToTopBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - Transaction Fees Explained</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="Crypto-Lwei.jpg" type="image/jpeg">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-purple-400">Understanding Cryptocurrency
+            Transaction Fees</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                Whenever you send cryptocurrency, you'll notice a small amount deducted as a "transaction fee." These
+                fees are a fundamental part of how decentralized blockchain networks operate. They are not paid to a
+                bank or a company, but rather to the network participants who process and secure your transaction.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Why Do Transaction Fees Exist?</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Transaction fees serve two primary purposes on a blockchain:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Incentivizing Miners/Validators:** In proof-of-work (like Bitcoin) or proof-of-stake (like
+                    Ethereum 2.0) networks, fees act as an incentive for miners or validators to include your
+                    transaction in the next block. They are compensated for the computational power or stake they commit
+                    to securing the network.</li>
+                <li>**Preventing Spam:** Fees make it costly for malicious actors to flood the network with a huge
+                    number of tiny, meaningless transactions, which could otherwise clog the system and slow it down for
+                    legitimate users.</li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Factors Affecting Transaction Fees</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Unlike traditional bank fees which are often fixed, cryptocurrency transaction fees are dynamic and can
+                fluctuate significantly based on several factors:
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Network Congestion (Demand)</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                This is the most significant factor. When many people are trying to send transactions at the same time,
+                the "space" in upcoming blocks becomes competitive. Users bid higher fees to get their transactions
+                processed faster. Think of it like a highway during rush hour – everyone wants to get through, so
+                they're willing to pay more for faster passage.
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Transaction Size/Complexity</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Fees are often based on the computational resources a transaction requires, not necessarily the value
+                being sent. A larger or more complex transaction (e.g., one involving multiple inputs/outputs on
+                Bitcoin, or a complex smart contract interaction on Ethereum) will take up more space in a block and
+                therefore typically incur a higher fee. For Ethereum, this is measured in "gas."
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">3. Wallet Software Settings</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Your wallet often allows you to choose a fee priority (e.g., "fast," "medium," "slow," or "custom").
+            <ul class="list-circle list-inside ml-4 mt-1 text-gray-400">
+                <li>**Higher Fee:** Your transaction is more likely to be picked up by miners/validators quickly,
+                    resulting in faster confirmation.</li>
+                <li>**Lower Fee:** Your transaction might take longer to confirm, or could even get stuck if network
+                    congestion is high.</li>
+            </ul>
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">4. Cryptocurrency Type</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Different blockchains have different fee structures and capacities. Bitcoin and Ethereum (especially
+                during high demand) tend to have higher and more volatile fees than some newer, faster blockchains
+                (e.g., Solana, Avalanche).
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">How Fees are Paid</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                Transaction fees are always paid in the native cryptocurrency of the network you're using. For example,
+                Bitcoin transaction fees are paid in Bitcoin, Ethereum fees (gas) are paid in Ether (ETH), and Solana
+                fees are paid in SOL. Make sure you have enough of the native coin in your wallet to cover the
+                transaction amount *plus* the fee.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Managing Fees</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                While you can't eliminate fees, you can manage them:
+            </p>
+            <ul class="list-disc list-inside text-gray-300 space-y-2 mb-4 pl-4">
+                <li>**Monitor Network Conditions:** Use online fee estimators (e.g., for Bitcoin or Ethereum gas
+                    trackers) to see current network congestion and recommended fees if timing isn't critical.</li>
+                <li>**Adjust Fee Priority:** If your transaction isn't urgent, choose a lower fee to save costs. If it's
+                    time-sensitive, opt for a higher fee.</li>
+                <li>**Consider Off-Chain Solutions:** For frequent, small transactions, consider using layer-2 solutions
+                    or centralized exchanges, which often handle transactions off the main blockchain, resulting in
+                    lower or no fees.</li>
+            </ul>
+            <p class="text-lg text-gray-300 mb-4">
+                Transaction fees are a necessary component of decentralized networks, ensuring their security and
+                operational efficiency. Understanding them helps you make informed decisions when sending crypto.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-purple-700 hover:bg-purple-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

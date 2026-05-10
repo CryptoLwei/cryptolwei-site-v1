@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoLwei - What Are Blockchains?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="cryptolwei.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="antialiased bg-gray-900 text-gray-100">
+    <header class="bg-gray-900 shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl font-bold text-blue-700 rounded-lg p-2 hover:bg-gray-800 transition-colors flex items-center space-x-2">
+                <img src="Crypto-Lwei.jpg" alt="Cryptolwei Logo" class="h-8 w-8 object-contain rounded-full">
+                <span class="text-blue-400">CryptoLwei</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#home"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Home</a>
+                <a href="index.html#about" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Crypto</a>
+                <a href="index.html#features"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Key Features</a>
+                <a href="index.html#get-started"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Get Started</a>
+                <a href="index.html#team"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Team</a>
+                <a href="index.html#contact"
+                    class="text-gray-300 hover:text-blue-400 font-medium transition-colors">Contact</a>
+                <a href="about-us.html" class="text-gray-300 hover:text-blue-400 font-medium transition-colors">About
+                    Us</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-blue-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav id="mobile-menu" class="md:hidden hidden bg-gray-900 py-2 shadow-md">
+            <a href="index.html#home"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Home</a>
+            <a href="index.html#about"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Key Features</a>
+            <a href="index.html#get-started"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Get Started</a>
+            <a href="index.html#team"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Team</a>
+            <a href="index.html#contact"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">Contact</a>
+            <a href="about-us.html"
+                class="block px-4 py-2 text-gray-300 hover:bg-gray-800 transition-colors rounded-lg">About Us</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-16 md:py-24">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-blue-400">What is Blockchain?</h1>
+
+        <div class="bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <p class="text-lg text-gray-300 mb-4">
+                At the heart of almost every cryptocurrency lies a revolutionary technology called the blockchain.
+                Imagine a digital ledger—a record book—that isn't kept in one central place but is distributed and
+                maintained by thousands of computers around the world. That's essentially a blockchain!
+            </p>
+            <h2 class="text-2xl font-bold mb-4 text-white">How a Blockchain Works: Blocks in a Chain</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                The name "blockchain" describes its structure perfectly. Information is grouped into "blocks." Once a
+                block is filled with transaction data (like who sent what to whom, and when), it's sealed and linked to
+                the previous block, forming a "chain." Each new block contains a cryptographic "hash" (a unique digital
+                fingerprint) of the block before it. This linking makes the chain incredibly secure.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Key Characteristics of Blockchain</h2>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">1. Decentralization</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Unlike traditional databases controlled by a single entity (like a bank or a company), a blockchain is
+                decentralized. There's no central authority managing it. Instead, all participants in the network have a
+                copy of the ledger. This distributed nature makes it highly resistant to attacks or failures. If one
+                computer goes offline, the network continues to operate.
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">2. Immutability</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                Once a block is added to the blockchain, it's nearly impossible to change or tamper with the data inside
+                it. Because each block is cryptographically linked to the previous one, altering an old block would
+                require re-calculating the hashes of all subsequent blocks, which is computationally infeasible. This
+                ensures the integrity and trustworthiness of the transaction history.
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">3. Transparency</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                While individual identities can be kept private (pseudonymous), every transaction on a public blockchain
+                is visible to anyone on the network. This means you can see the flow of funds from one address to
+                another, providing a high degree of transparency in financial activity without revealing personal
+                information.
+            </p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-200">4. Consensus Mechanism</h3>
+            <p class="text-lg text-gray-300 mb-4">
+                For new blocks to be added to the chain, the network participants must agree on their validity. This is
+                achieved through "consensus mechanisms" (like Proof of Work for Bitcoin or Proof of Stake for Ethereum
+                2.0). These mechanisms ensure that all copies of the ledger remain synchronized and accurate across the
+                decentralized network.
+            </p>
+
+            <h2 class="text-2xl font-bold mb-4 text-white">Beyond Cryptocurrencies</h2>
+            <p class="text-lg text-gray-300 mb-4">
+                While blockchains are fundamental to cryptocurrencies, their applications extend far beyond digital
+                money. They are being explored for supply chain management, voting systems, digital identity, healthcare
+                records, and much more, thanks to their ability to provide secure, transparent, and immutable
+                record-keeping.
+            </p>
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="crypto101.html"
+                class="inline-block bg-white text-blue-700 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold shadow-xl transition-all duration-300 transform hover:scale-105">
+                Back to Crypto 101
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 rounded-t-lg">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">&copy; 2025 Cryptolwei. All rights reserved.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy
+                    Policy</a>
+                <a href="terms-conditions.html" class="text-gray-400 hover:text-white transition-colors">Terms of
+                    Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

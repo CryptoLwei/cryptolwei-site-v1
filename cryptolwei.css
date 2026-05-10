@@ -1,0 +1,18 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a2e; /* Dark background inspired by Solana */
+    color: #e0e0e0; /* Lighter text for contrast */
+}
+/* Adjust specific section backgrounds for better contrast on dark body */
+#about, #contact {
+    background-color: #21213c; /* Slightly lighter dark background for sections */
+}
+#features {
+    background-color: #1a1a2e; /* Same as body for blending */
+}
+.text-blue-700 { /* Adjusting header titles to be more visible */
+    color: #8be9fd; /* Lighter blue for headers */
+}
+.hover\:text-blue-700:hover { /* Adjusting hover state */
+    color: #8be9fd;
+}
