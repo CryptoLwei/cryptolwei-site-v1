@@ -35,4 +35,6 @@ This was **version 1**. The journey continued:
 - 📺 YouTube / CryptoLwei
 - 📧 cryptolwei@gmail.com
 
+  [![Live Site](https://img.shields.io/badge/Live%20Site-cryptolwei.github.io-blue?style=flat&logo=github)](https://cryptolwei.github.io/cryptolwei-site-v1)
+
 *© 2024 CryptoLwei. Educational content — not financial advice.*
